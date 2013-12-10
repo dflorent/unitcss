@@ -1,0 +1,27 @@
+/*
+	=Settings
+---------------------------------------------------------------------------- */
+
+$base-color                  : #333;
+$base-font-size              : 14px;
+$base-line-height            : 21px;
+$base-font-family            : "Arial", sans-serif;
+$heading-font-family         : "Arial", sans-serif;
+$heading-font-weight         : bold;
+$h1-font-size                : 36px;
+$h2-font-size                : 30px;
+$h3-font-size                : 24px;
+$h4-font-size                : 22px;
+$h5-font-size                : 20px;
+$h6-font-size                : 18px;
+$link-color                  : gray;
+$experimental-support-for-svg: true;
+
+$columns                     : 12;
+$column-width                : 60;
+$gutter-width                : 20;
+
+// Uncomment the definition below for a percentage-based layout
+// $total-width: 100%;
+ 
+@include establish-baseline;

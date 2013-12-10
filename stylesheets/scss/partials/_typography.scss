@@ -1,0 +1,69 @@
+/*
+    =Typographie
+---------------------------------------------------------------------------- */
+
+.h1, .h2,
+.h3, .h4,
+.h5, .h6 {
+    font-family: $heading-font-family;
+    font-weight: $heading-font-weight;
+}
+
+.h1 { @include adjust-font-size-to($h1-font-size); }
+.h2 { @include adjust-font-size-to($h2-font-size); }
+.h3 { @include adjust-font-size-to($h3-font-size); }
+.h4 { @include adjust-font-size-to($h4-font-size); }
+.h5 { @include adjust-font-size-to($h5-font-size); }
+.h6 { @include adjust-font-size-to($h6-font-size); }
+
+.a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.ul,
+.ol { padding-left: 1em; }
+.ul { list-style-type: disc; }
+.ol { list-style: decimal; }
+
+.typography {
+
+    a { @extend .a; }
+
+    i, em { font-style: italic; }
+    b, strong { font-weight: bold; }
+    
+    h1, .h1 { @extend .h1; margin: rhythm(2, $h1-font-size) 0 0 0; }
+    h2, .h2 { @extend .h2; margin: rhythm(2, $h2-font-size) 0 0 0; }
+    h3, .h3 { @extend .h3; margin: rhythm(1, $h3-font-size) 0 0 0; }
+    h4, .h4 { @extend .h4; margin: rhythm(1, $h4-font-size) 0 0 0; }
+    h5, .h5 { @extend .h5; margin: rhythm(1, $h5-font-size) 0 0 0; }
+    h6, .h6 { @extend .h6; margin: rhythm(1, $h6-font-size) 0 0 0; }
+
+    p, ul, ol { margin: rhythm(1, $base-font-size) 0 0 0; }
+
+    ul { @extend .ul; }
+    ol { @extend .ol; }
+
+    p, ul, ol,
+    h1, h2, h3, h4, h5, h6 {
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    li {
+        p, ul, ol {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+}
+
+sup, sub { vertical-align: 0; position: relative; }
+sup { bottom: 1ex; }
+sub { top: .5ex; }

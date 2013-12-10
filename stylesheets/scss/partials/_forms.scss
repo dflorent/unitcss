@@ -1,0 +1,38 @@
+/*
+    =Formulaires
+---------------------------------------------------------------------------- */
+
+label,
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+    cursor: pointer;
+    -webkit-appearance: button;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"] {
+    -webkit-appearance: none;
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+label,
+button,
+input,
+select {
+    vertical-align: middle;
+}

@@ -1,0 +1,25 @@
+/*
+    =Boutons
+---------------------------------------------------------------------------- */
+
+.btn {
+    @include inline-block();
+    @include border-radius(4px);
+    @include filter-gradient(#fff, #e6e6e6); /* IE6-8 */
+    @include background(linear-gradient(#fff, #e6e6e6));
+    @include text-shadow(rgba(255, 255, 255, 0.74902) 0 1px 1px);
+    cursor: pointer;
+    border: 1px solid #b3b3b3;
+    color: #333;
+    font-size: $base-font-size;
+    line-height: 30px;
+    margin: 1em 0;
+    padding: 0 20px;
+    text-align: center;
+    text-decoration: none;
+    
+    &:hover {
+        @include filter-gradient(#eee, #e6e6e6); /* IE6-8 */
+        @include background(linear-gradient(#eee, #e6e6e6));
+    }
+}
