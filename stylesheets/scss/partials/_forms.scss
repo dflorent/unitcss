@@ -8,6 +8,11 @@ input[type="submit"],
 input[type="button"],
 input[type="reset"] {
     cursor: pointer;
+}
+
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
     -webkit-appearance: button;
 }
 
