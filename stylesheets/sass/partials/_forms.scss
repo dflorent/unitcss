@@ -1,0 +1,45 @@
+/*
+    =Formulaires
+---------------------------------------------------------------------------- */
+
+label,
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+    cursor: pointer;
+}
+
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+    -webkit-appearance: button;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="email"] {
+    -webkit-appearance: none;
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    padding: 0;
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+
+label,
+button,
+input,
+select {
+    vertical-align: middle;
+}

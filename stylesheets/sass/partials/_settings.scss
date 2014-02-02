@@ -1,0 +1,21 @@
+/*
+    =Settings
+---------------------------------------------------------------------------- */
+
+$base-color                  : #95a5a6;
+$base-font-size              : 14px;
+$base-line-height            : 21px;
+$base-font-family            : "Arial", serif;
+$heading-font-family         : "Georgia", sans-serif;
+$heading-font-weight         : normal;
+$heading-color               : #2c3e50;
+$mega-font-size              : 36px;
+$alpha-font-size             : 30px;
+$beta-font-size              : 24px;
+$gamma-font-size             : 22px;
+$epsilon-font-size           : 20px;
+$zeta-font-size              : 18px;
+$link-color                  : #3498db;
+$experimental-support-for-svg: true;
+
+@include establish-baseline;
